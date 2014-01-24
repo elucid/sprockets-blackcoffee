@@ -1,6 +1,6 @@
-# Sprockets BlackCoffee
+# Sprockets Es6Coffee
 
-Yes, sometimes it may be OK to render your CoffeeScript files using the `--bare` option. Most notably, in test spec helper files under Jasmine.
+If we are using Coffeescript with ES6 modules, we do not want our Coffeescript compiled output to be wrapped in IIFEs as this is not supported by the ES6 spec.
 
 
 ### Usage
@@ -8,8 +8,8 @@ Yes, sometimes it may be OK to render your CoffeeScript files using the `--bare`
 Spec the gem in your Gemfile and bundle install.
 
 ```ruby
-gem 'sprockets-blackcoffee'
+gem 'sprockets-es6-coffee'
 ```
 
-The gem resisters a new template that subclasses Tilt's default CoffeeScript template. Except it does one thing, it sets the `--bare` option to true. To use this template, name your files with the `.black_coffee` file extension.
+The gem overrides the .coffee extension to not wrap Coffeescript compiled output in an IIFE *if* it will be processed by the .es6 module preprocessor.
 
