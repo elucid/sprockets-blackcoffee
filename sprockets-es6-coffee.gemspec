@@ -5,8 +5,8 @@ require "sprockets-es6-coffee/version"
 Gem::Specification.new do |s|
   s.name        = 'sprockets-es6-coffee'
   s.version     = Sprockets::Es6Coffee::VERSION
-  s.authors     = ['Ken Collins']
-  s.email       = ['ken@metaskills.net']
+  s.authors     = ['Ken Collins', 'Mattia Gheda', 'Justin Giancola']
+  s.email       = ['ken@metaskills.net', 'ghedamat@gmail.com', 'justin.giancola@gmail.com']
   s.homepage    = "http://github.com/elucid/sprockets-es6-coffee"
   s.summary     = %q{ES6 module-friendly Coffeescript compiler}
   s.description = %q{Don't wrap Coffeescript compiled output in IIFEs if es6 module is being used}
